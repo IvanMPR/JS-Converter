@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css " />
+  <link rel="stylesheet" href="style.css" />
+  <title>Converter</title>
+</head>
+
+<body>
+  <header id="showcase">
+    <h1>Miles / Kilometers Converter</h1>
+  </header>
+  <main id="background">
+    <div id="converter-container">
+      <div id="miles">
+        <h2>Miles</h2>
+        <input id="miles-input" onkeyup="milesConvert()" placeholder="Miles to Kilometers " />
+      </div>
+      <button onclick="" id="convert" title="Reset values">
+        <i class="fas fa-sync-alt"></i>
+      </button>
+
+      <div id="km">
+        <input id="km-input" onkeyup="kmConvert()" placeholder="Kilometers to Miles" />
+        <h2>Kilometers</h2>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!-- onkeyup="milesConvert()" line 21 -->

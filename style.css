@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Header */
+header#showcase {
+  width: 100%;
+  height: 30vh;
+  background: url(img/road.jpg) no-repeat center -500px / cover;
+  background-attachment: fixed;
+  position: relative;
+}
+header#showcase::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #333;
+  opacity: 0.7;
+}
+header#showcase h1 {
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+  top: 40%;
+  z-index: 1;
+}
+
+main#background #converter-container {
+  background: #333;
+  text-align: center;
+  color: #f4f4f4;
+  width: 500px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+button#convert {
+  padding: 0.5rem;
+  background: #ffad60;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #333;
+}
+/* button#convert:hover {
+  background: #ffad60;
+} */
+button#convert:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+}
+button#convert:hover i {
+  color: #fff;
+  transition: color 0.25s ease-in;
+}
+
+main#background #converter-container h2 {
+  padding: 1rem;
+}
+main#background #converter-container input {
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: block;
+}
+
+
+/* main#background #converter-container #miles input#miles-input {
+  position: relative;
+  animation: slideDown 2000ms;
+} 
+main#background #converter-container #km input#km-output {
+  position: relative;
+  animation: slideUp 2000ms;
+} */
+
+
+main#background #converter-container input:focus {
+  border: 2px solid #ffad60;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease-in;
+}
+
+/* Converter */
+main#background #converter-container #miles,
+main#background #converter-container #km {
+  padding: 0.5rem;
+}
+
+/* Animation on Invert button */
+/* @keyframes slideDown {
+  from {top: 0px;}
+  to {top: 135px}
+}
+@keyframes slideUp {
+  from {top: 0px;}
+  to {top: -135px}
+} */
+
+/* @keyframes slide {
+  from {left:0;}
+  to {left: 55}
+} */
