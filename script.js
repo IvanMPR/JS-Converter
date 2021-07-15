@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
 
 function milesConvert() {
   var conversionAmount = milesInput.value;
-  var convertedValue = conversionAmount * 1.6;
+  var convertedValue = (conversionAmount * 1.6).toFixed(1);
   if (isNaN(conversionAmount)) {
     document.getElementById("km-input").value =
       " Error ! Please enter a numeric value ! ";
@@ -21,7 +21,7 @@ function milesConvert() {
 
 function kmConvert() {
   var conversionAmount = kmInput.value;
-  var convertedValue = conversionAmount / 1.6;
+  var convertedValue = (conversionAmount / 1.6).toFixed(1);
   if (isNaN(conversionAmount)) {
     document.getElementById("miles-input").value =
       " Error ! Please enter a numeric value ! ";
@@ -34,4 +34,5 @@ function kmConvert() {
 // Button function
 clear.addEventListener("click", function () {
   document.querySelectorAll("input").forEach((input) => (input.value = ""));
+  milesInput.focus();
 });
