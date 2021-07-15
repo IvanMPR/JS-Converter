@@ -51,11 +51,11 @@ button#clear {
 /* button#convert:hover {
   background: #ffad60;
 } */
-button#convert:focus {
+button#clear:focus {
   outline: none;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
 }
-button#convert:hover i {
+button#clear:hover i {
   color: #fff;
   transition: color 0.25s ease-in;
 }
