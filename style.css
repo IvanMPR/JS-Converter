@@ -38,7 +38,7 @@ main#background #converter-container {
   padding: 1.5rem;
   border-radius: 5px;
 }
-button#convert {
+button#clear {
   padding: 0.5rem;
   background: #ffad60;
   cursor: pointer;
@@ -73,7 +73,6 @@ main#background #converter-container input {
   display: block;
 }
 
-
 /* main#background #converter-container #miles input#miles-input {
   position: relative;
   animation: slideDown 2000ms;
@@ -82,7 +81,6 @@ main#background #converter-container #km input#km-output {
   position: relative;
   animation: slideUp 2000ms;
 } */
-
 
 main#background #converter-container input:focus {
   border: 2px solid #ffad60;
