@@ -1,3 +1,3 @@
-# Miles/Km-Km/Miles Converter
+# Distance Units Converter
 
 One of the first projects I've built
