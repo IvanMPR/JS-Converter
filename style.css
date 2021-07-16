@@ -29,6 +29,23 @@ header#showcase h1 {
   z-index: 1;
 }
 
+.credits {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #fff;
+  font-size: 12px;
+}
+
+a:link,
+a:visited {
+  color: #ffad60;
+  text-decoration: none;
+  font-style: italic;
+}
+
 main#background #converter-container {
   background: #333;
   text-align: center;
@@ -48,9 +65,7 @@ button#clear {
   font-weight: bold;
   color: #333;
 }
-/* button#convert:hover {
-  background: #ffad60;
-} */
+
 button#clear:focus {
   outline: none;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
@@ -73,15 +88,6 @@ main#background #converter-container input {
   display: block;
 }
 
-/* main#background #converter-container #miles input#miles-input {
-  position: relative;
-  animation: slideDown 2000ms;
-} 
-main#background #converter-container #km input#km-output {
-  position: relative;
-  animation: slideUp 2000ms;
-} */
-
 main#background #converter-container input:focus {
   border: 2px solid #ffad60;
   border-radius: 3px;
@@ -95,18 +101,3 @@ main#background #converter-container #miles,
 main#background #converter-container #km {
   padding: 0.5rem;
 }
-
-/* Animation on Invert button */
-/* @keyframes slideDown {
-  from {top: 0px;}
-  to {top: 135px}
-}
-@keyframes slideUp {
-  from {top: 0px;}
-  to {top: -135px}
-} */
-
-/* @keyframes slide {
-  from {left:0;}
-  to {left: 55}
-} */
